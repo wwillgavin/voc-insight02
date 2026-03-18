@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #1677FF;
+  --color-bg-main: #F5F7FA;
+  --color-bg-card: #FFFFFF;
+  --color-text-main: #333333;
+  --color-text-sub: #4E5969;
+  --color-text-minor: #86909C;
+  --color-border-color: #E5E7EB;
+
+  --color-status-negative: #F5A65B;
+  --color-status-positive: #52C41A;
+  --color-status-neutral: #DCDCDC;
+
+  --color-insight-blue-bg: #E6F2FF;
+  --color-insight-blue-text: #1677FF;
+  --color-insight-purple-bg: #F5F0FF;
+  --color-insight-purple-text: #722ED1;
+  --color-insight-cyan-bg: #E6FFFB;
+  --color-insight-cyan-text: #13C2C2;
+  --color-insight-yellow-bg: #FFFBE6;
+  --color-insight-yellow-text: #B88200;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--color-bg-main);
+  color: var(--color-text-main);
+  font-family: var(--font-sans);
+}
+
+/* Custom Scrollbar for a cleaner look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #C9CDD4;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #86909C;
+}
+
+/* DeepTag Card Style */
+.deeptag-card {
+  background-color: var(--color-bg-card);
+  border-radius: 8px;
+  border: 1px solid var(--color-border-color);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+  transition: all 0.2s ease;
+}
+.deeptag-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.deeptag-title {
+  font-weight: 600;
+  color: var(--color-text-main);
+}
+.deeptag-sub {
+  color: var(--color-text-sub);
+}
+.deeptag-minor {
+  color: var(--color-text-minor);
+}
